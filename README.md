@@ -1,0 +1,1 @@
+C is a general-purpose, procedural, structured programming language developed by Dennis Ritchie at Bell Laboratories in the early 1970s. It was designed to develop system software and provides efficient control over computer memory and hardware while also supporting structured programming.
