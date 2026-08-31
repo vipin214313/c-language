@@ -1,0 +1,167 @@
+
+	getch?
+	cpp=c++
+
+	Functions:-function is a block of code , which ahave a body of codes and execute by name calling .
+	=>function always call by name .
+	=>function always defined curly brackets {body of function , loops , conditions}
+	=>if we use function , then code is very less, time and memory less
+	note:-if u have any function and ou required that code multipule time then function code is note required you need only function name.
+	
+	types: two types function
+	1-Built-in Functions
+	2-User defined function
+	
+	1-Built-in function:- it is also known as library function, it is also built-in  header files ex- textColor (), text background(), scanf(), printf(), getch() etc..
+	
+	2-Udf: it is stands user defined fuunctions the function the function that is defibed by userd is called user defined function.in udf function always create by user.
+	
+	syntax:   	no_return Type FunctionName(){
+					//block o code
+					}
+					
+				examples:-
+						void f1(){
+						//block of code;
+						}
+						
+						//here void is a no_return  data type and f1 is a function name and parameter is null.
+						
+			fuctions Rules:-there are three rules of fuctions.
+				1-fuctions declaration.
+				2-fuctions definitions.
+				3-function Calling.
+				
+			1-fuctions declaration: it is declared global in c program to tell compiler about the function name , parameters and return type.
+			
+				syntax: return_type fuctionsName(parameter);
+				
+				ex: int f1(int a ,int b);
+				
+			2-function definitions:- it conatin actual statement are execute in c program
+				ex: return_type fuctionsName(parameter){
+				//bock of code
+				}
+				ex  int f1(int a , int b){
+				//block of code
+				}
+			3-function Calling:-function always call by name in main block,
+				=>function always call by name
+					syntax: fuctionsName(parameter);
+					
+					ex:- f1(); //calling fuctions
+		
+		
+	task:- 	1-square root, circumfrence, everage ,profit loss , substarct two numbers, find total subject number and also percenatge 5 subject,
+	
+		Note:- in this session in c programming we learn multipule program today my task is that i convert will convert minimum 25  program by using function  and no return type;
+		
+
+	//diffrence types of fuctions Calling v.imp
+		1-no return_type no passing Parameaters
+		
+			void  add(){
+			//block of code
+			}
+		
+		2-no return_type but passing parameter
+		
+			 void add2(int a, int b) {
+			 //codes
+			 }
+		3- return_type but no passing parameter
+		
+			int add3(){
+			//codes
+			}
+		4- return_type and passing parameter
+		
+			int add4(int a, int b){
+			//codes
+			}
+
+
+note: jaha shoud have return type prototype aaye to matlab header file missing hai 
+
+task:-1-write a c program find addition of 2 number by using all udf type in one program 
+
+types of Udf calling:
+there are two types of udf calling 
+1-call by value
+	=>when any function is call by value,then this process is know as call by value udf calling
+	ex:-
+		void swap(int a, int b){
+			int x,y;
+			x=a;
+			y=b;
+			print here x and y value....
+		}
+2-call by refrence
+	=>when any function  call by refrence or address from another variable, then this process is know as call by refrence...
+			this concept is used  pointer
+				Pointer:-pointer is a variable which hold address of another variable.
+						=.pointer have two symbol.
+							*(astric):- it is used to take teh value from variable.
+							&(ampersand):- it hold the address of another variable.
+
+			note: if you want to display the address of another variable  from memory , then we used %u  symbol.
+
+			syntax of pointer:-
+			Data_type *pointername;
+			ex:-
+			int *p;
+
+Structure:-Structure is the  collection of similar or disimilar data type
+=>Structure is also user defined data type
+=>when we declare any Structure type variable then we use struct keyword.
+
+	syntax:-struct Data_type variable_name;
+
+	ex:- struct int a;
+
+definition of Structure:-
+	struct StructureName{
+
+		Data_type variable1;
+		Data_type variable2;
+
+		.....
+
+	}object of Structure;
+
+	ex:-
+	struct student{
+		char name[70];
+		char branch[100];
+
+		....
+	}s;
+//how we call variable from Structure:-
+syntax1:-
+		objectName.variablename;
+ex:- s.name, s.branch;
+
+gets()=>it is also a input method , gets function is used string.h header files. it is used to read whole string...
+
+union:- union is defned by union keyword,
+=>union have the size of only big size of variable
+=>it is same like as Structure..
+
+string:-string is the collection of charater 
+=>string is always defined (""), charater is always defined single brackets('').
+
+ex: "amit --string'A'--charater..
+
+there are some function used in string...
+1:-strlen(). if u find lenght of string then we used strlen.
+2;-strcpy().
+3.strcmp().
+4:-strupr().
+5:-strlwr().
+ 
+ syntax of string same as array.
+
+ scanf("%s",name);=>scanf sirf pahke word ka print karta hai bhi new line per chala jata hai.
+  gets(name);==puri string ko print karta hai .
+			
+		

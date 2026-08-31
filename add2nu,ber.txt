@@ -1,0 +1,25 @@
+#include<Studion.h>
+#includde<conio.h>
+int main(){
+
+	int a[][], b[][], c[] [];
+	
+	int i,j;
+	printf("enter the @*@ first element: \n");
+	for (i=0; i<2; i++){
+	for (j=0; j<2; j++){
+	scanf("%d", &a[i][j]);
+	}
+	}
+	printf(Enter the  2*2 second number"\n);
+	for(i=0;i<2;i++){
+	for(j=0;j<2;j++){
+	scanf("%d",&b[i][j]);
+	}
+	}
+	printf("Results in matrix form;\n");
+	for (i=0; i<2; i++){
+	c[i] [j] =a[i] [j] +b [i] [j] ;
+	printf ("\n");}
+	return 0;
+	}

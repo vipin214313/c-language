@@ -1,0 +1,507 @@
+Bilkul 👍 Main har program ko **logic + formula + code + simple explanation** ke saath samjhata hoon. Sabhi programs mein **`void` function (no return type)** use karenge.
+
+---
+
+## 1. Square Root
+
+### Logic
+
+Agar user koi number deta hai, jaise `25`, to humein uska square root nikalna hai.
+
+* Input → `25`
+* `sqrt(25)` → `5`
+* Output → `5`
+
+C mein square root ke liye `sqrt()` function use hota hai, jo `<math.h>` mein hota hai.
+
+### Code
+
+```c
+#include <stdio.h>
+#include <math.h>
+
+void squareRoot()
+{
+    float n, result;
+
+    // Step 1: Input
+    printf("Enter a number: ");
+    scanf("%f", &n);
+
+    // Step 2: Calculate square root
+    result = sqrt(n);
+
+    // Step 3: Output
+    printf("Square root = %.2f", result);
+}
+
+int main()
+{
+    squareRoot();
+
+    return 0;
+}
+```
+
+### Example
+
+```text
+Enter a number: 25
+Square root = 5.00
+```
+
+**Logic:**
+`number → sqrt() → result`
+
+---
+
+# 2. Circumference of Circle
+
+### Formula
+
+genui{"shapes_measurement_learning_block":{"type_id":"SURFACE_AREA_SPHERE","locale_override":"en-IN"}}
+
+Circle ki circumference ka formula:
+
+**C = 2 × π × r**
+
+Yahan:
+
+* `C` = Circumference
+* `π` = 3.14
+* `r` = Radius
+
+### Logic
+
+Agar radius `5` hai:
+
+```text
+C = 2 × 3.14 × 5
+C = 31.4
+```
+
+### Code
+
+```c
+#include <stdio.h>
+
+void circumference()
+{
+    float r, c;
+    float pi = 3.14;
+
+    // Step 1: Input radius
+    printf("Enter radius: ");
+    scanf("%f", &r);
+
+    // Step 2: Calculate circumference
+    c = 2 * pi * r;
+
+    // Step 3: Output
+    printf("Circumference = %.2f", c);
+}
+
+int main()
+{
+    circumference();
+
+    return 0;
+}
+```
+
+### Example
+
+```text
+Enter radius: 5
+Circumference = 31.40
+```
+
+**Logic:**
+`radius → 2 × 3.14 × radius → circumference`
+
+---
+
+# 3. Average of Three Numbers
+
+### Formula
+
+**Average = (a + b + c) / 3**
+
+### Logic
+
+Maan lo:
+
+```text
+a = 10
+b = 20
+c = 30
+```
+
+Pehle total:
+
+```text
+10 + 20 + 30 = 60
+```
+
+Phir average:
+
+```text
+60 / 3 = 20
+```
+
+### Code
+
+```c
+#include <stdio.h>
+
+void average()
+{
+    float a, b, c, avg;
+
+    // Step 1: Input
+    printf("Enter three numbers: ");
+    scanf("%f %f %f", &a, &b, &c);
+
+    // Step 2: Calculate average
+    avg = (a + b + c) / 3;
+
+    // Step 3: Output
+    printf("Average = %.2f", avg);
+}
+
+int main()
+{
+    average();
+
+    return 0;
+}
+```
+
+### Example
+
+```text
+Enter three numbers: 10 20 30
+Average = 20.00
+```
+
+**Logic:**
+`3 numbers → add → divide by 3 → average`
+
+---
+
+# 4. Profit and Loss
+
+Isme humein **Cost Price (CP)** aur **Selling Price (SP)** lena hai.
+
+### Logic
+
+### Case 1: SP > CP
+
+Profit hoga.
+
+**Profit = SP - CP**
+
+Example:
+
+```text
+CP = 500
+SP = 700
+
+Profit = 700 - 500
+Profit = 200
+```
+
+### Case 2: CP > SP
+
+Loss hoga.
+
+**Loss = CP - SP**
+
+Example:
+
+```text
+CP = 700
+SP = 500
+
+Loss = 700 - 500
+Loss = 200
+```
+
+### Case 3: CP = SP
+
+```text
+No Profit No Loss
+```
+
+### Code
+
+```c
+#include <stdio.h>
+
+void profitLoss()
+{
+    float cp, sp, profit, loss;
+
+    // Step 1: Input
+    printf("Enter Cost Price: ");
+    scanf("%f", &cp);
+
+    printf("Enter Selling Price: ");
+    scanf("%f", &sp);
+
+    // Step 2: Check condition
+    if (sp > cp)
+    {
+        profit = sp - cp;
+        printf("Profit = %.2f", profit);
+    }
+    else if (cp > sp)
+    {
+        loss = cp - sp;
+        printf("Loss = %.2f", loss);
+    }
+    else
+    {
+        printf("No Profit No Loss");
+    }
+}
+
+int main()
+{
+    profitLoss();
+
+    return 0;
+}
+```
+
+### Flow samjho
+
+```text
+        CP and SP
+            |
+       SP > CP ?
+       /       \
+     Yes        No
+      |          |
+   Profit     CP > SP ?
+                /   \
+              Yes    No
+               |      |
+             Loss   No Profit
+```
+
+---
+
+# 5. Subtract Two Numbers
+
+### Logic
+
+Do numbers input lenge:
+
+```text
+a = 50
+b = 20
+```
+
+Formula:
+
+**Result = a - b**
+
+```text
+50 - 20 = 30
+```
+
+### Code
+
+```c
+#include <stdio.h>
+
+void subtraction()
+{
+    int a, b, result;
+
+    // Step 1: Input
+    printf("Enter first number: ");
+    scanf("%d", &a);
+
+    printf("Enter second number: ");
+    scanf("%d", &b);
+
+    // Step 2: Subtraction
+    result = a - b;
+
+    // Step 3: Output
+    printf("Subtraction = %d", result);
+}
+
+int main()
+{
+    subtraction();
+
+    return 0;
+}
+```
+
+### Example
+
+```text
+Enter first number: 50
+Enter second number: 20
+Subtraction = 30
+```
+
+**Logic:**
+`a → - → b → result`
+
+---
+
+# 6. Total and Percentage of 5 Subjects
+
+Ye thoda important hai. Isko achhe se samjho.
+
+Maan lo 5 subjects hain:
+
+```text
+Subject 1 = 80
+Subject 2 = 70
+Subject 3 = 90
+Subject 4 = 75
+Subject 5 = 85
+```
+
+### Step 1: Total
+
+```text
+Total = s1 + s2 + s3 + s4 + s5
+
+Total = 80 + 70 + 90 + 75 + 85
+
+Total = 400
+```
+
+### Step 2: Percentage
+
+Har subject 100 marks ka hai.
+
+5 subjects ke maximum marks:
+
+```text
+5 × 100 = 500
+```
+
+Formula:
+
+**Percentage = (Total / 500) × 100**
+
+```text
+Percentage = (400 / 500) × 100
+Percentage = 80%
+```
+
+### Code
+
+```c
+#include <stdio.h>
+
+void marks()
+{
+    float s1, s2, s3, s4, s5;
+    float total, percentage;
+
+    // Step 1: Input marks
+    printf("Enter marks of Subject 1: ");
+    scanf("%f", &s1);
+
+    printf("Enter marks of Subject 2: ");
+    scanf("%f", &s2);
+
+    printf("Enter marks of Subject 3: ");
+    scanf("%f", &s3);
+
+    printf("Enter marks of Subject 4: ");
+    scanf("%f", &s4);
+
+    printf("Enter marks of Subject 5: ");
+    scanf("%f", &s5);
+
+    // Step 2: Calculate total
+    total = s1 + s2 + s3 + s4 + s5;
+
+    // Step 3: Calculate percentage
+    percentage = (total / 500) * 100;
+
+    // Step 4: Display result
+    printf("Total Marks = %.2f\n", total);
+    printf("Percentage = %.2f%%", percentage);
+}
+
+int main()
+{
+    marks();
+
+    return 0;
+}
+```
+
+### Example
+
+```text
+Enter marks of Subject 1: 80
+Enter marks of Subject 2: 70
+Enter marks of Subject 3: 90
+Enter marks of Subject 4: 75
+Enter marks of Subject 5: 85
+
+Total Marks = 400.00
+Percentage = 80.00%
+```
+
+---
+
+## ⭐ Sabhi programs ka common logic
+
+Tumhare teacher ne **function + no return type** bola hai, isliye har program mein ye structure yaad rakho:
+
+```c
+void functionName()
+{
+    // 1. Input
+    // 2. Logic/Calculation
+    // 3. Output
+}
+
+int main()
+{
+    functionName();
+
+    return 0;
+}
+```
+
+### Simple rule yaad rakho:
+
+**Input → Process → Output**
+
+For example, subtraction:
+
+```text
+Input:     a, b
+             ↓
+Process:   a - b
+             ↓
+Output:    result
+```
+
+Aur function ke case mein:
+
+```text
+main()
+  ↓
+function call
+  ↓
+void function()
+  ↓
+Input → Calculation → Output
+```
+
+**`void` ka matlab:** function koi value `return` nahi karega.
